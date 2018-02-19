@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Netflix1080",
+  "description": "Enable 1080p resolutions on Netflix.",
+  "version": "1.0",
+  "author": "Mark Bauermeister",
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "web_accessible_resources": [
+    "cadmium-playercore-1080p.js"
+  ],
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://assets.nflxext.com/en_us/ffe/player/html/*",
+    "*://www.assets.nflxext.com/en_us/ffe/player/html/*",
+    "*://netflix.com/watch/*",
+    "*://www.netflix.com/watch/*"
+  ],
+  "applications": {
+    "gecko": {
+      "id": "netflix1080@anima-os.com"
+    }
+  }
+}
